@@ -4,29 +4,201 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
+  <script src="https://kit.fontawesome.com/a51853b014.js" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="./style/style.css">
+  <title>Author</title>
 </head>
 <body>
-  <nav>
-    <div className="container">
-      <div className="navWrapper">
-        <div className="logo">
-          Author<span>.</span>
-        </div>
-        <div className="navLinks">
-          <a href="#hero">Home</a>
-          <a href="#about">About</a>
-          <a href="#chapter">Chapter</a>
-          <a href="reviews">Reviews</a>
-          <a href="#myBooks">My Books</a>
-          <a href="#author">Author</a>
-          <a href="#contact">Contact</a>
-        </div>
-        <div className="bar">
-          <AiOutlineBars onClick={hendleNav} />
+  <header>
+    <nav>
+      <div class="container">
+        <div class="navWrapper">
+          <div class="logo">
+            Author<span>.</span>
+          </div>
+          <div class="navLinks">
+            <a href="#hero">Home</a>
+            <a href="#about">About</a>
+            <a href="#chapter">Chapter</a>
+            <a href="reviews">Reviews</a>
+            <a href="#myBooks">My Books</a>
+            <a href="#author">Author</a>
+            <a href="#contact">Contact</a>
+          </div>
+          <div class="bar">
+            <i class="fas fa-bars"></i>
+          </div>
         </div>
       </div>
-    </div>
-  </nav>
+    </nav>
+  </header>
+  <main>
+    <section id="hero">
+      <div class="heroWrapper">
+        <div class="heroText">
+          <span>BEST SELLER BOOK OF THE WEEK</span>
+          <h1>Clue Of The Wooden Cottage</h1>
+          <p>
+            A small river named Duden flows by their place and supplies it
+            with the necessary regelialia. It is a paradisematic country, in
+            which roasted parts of sentences fly into your mouth.
+          </p>
+          <Button>Buy Now For $22</Button>
+        </div>
+        <div class="heroImg">
+          <img src="./img/hero-img.svg" alt="girl rading a book" />
+        </div>
+      </div>
+    </section>
+    <section id="sponsor">
+      <div class="container">
+        <div class="sponsorWrapper">
+          <div class="spImg">
+            <img src="./img/sponsor/sp-1.webp" alt="microsoft" />
+          </div>
+          <div class="spImg">
+            <img src="./img/sponsor/sp-2.webp" alt="android" />
+          </div>
+          <div class="spImg">
+            <img src="./img/sponsor/sp-3.webp" alt="java" />
+          </div>
+          <div class="spImg">
+            <img src="./img/sponsor/sp-4.webp" alt="google" />
+          </div>
+          <div class="spImg">
+            <img src="./img/sponsor/sp-5.webp" alt="adobe" />
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="about">
+      <div class="container">
+        <div class="aboutWrapper">
+          <div class="aboutImg"></div>
+          <div class="bookDesc">
+            <h1>About The Book</h1>
+            <p>
+              A small river named Duden flows by their place and supplies it
+              with the necessary regelialia. It is a paradisematic country,
+              in which roasted parts of sentences fly into your mouth.
+            </p>
+            <h4>Award achievements</h4>
+            <p>
+              Far far away, behind the word mountains, far from the
+              countries Vokalia and Consonantia, there live the blind texts.
+              Separated they live in Bookmarksgrove right at the coast of
+              the Semantics, a large language ocean.
+            </p>
+            <h4>Read On Any Devices</h4>
+            <p>
+              Separated they live in Bookmarksgrove right at the coast of
+              the Semantics, a large language ocean.
+            </p>
+            <h4>Very High Resolution</h4>
+            <p>
+              Far far away, behind the word mountains, far from the
+              countries Vokalia and Consonantia, there live the blind texts.
+            </p>
+          </div>
+        </div>
+        <div class="counter">
+          <div class="auto_count">
+            <div class="auto_counter" data-id="1100"></div>
+            <p>Copies Sold</p>
+          </div>
+          <div class="auto_count">
+            <div class="auto_counter" data-id="1200"></div>
+            <p>Copies Released</p>
+          </div>
+          <div class="auto_count">
+            <div class="auto_counter" data-id="340"></div>
+            <p>Cup Of Coffee</p>
+          </div>
+          <div class="auto_count">
+            <div class="auto_counter" data-id="12000"></div>
+            <p>Happy Readers</p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="chapter">
+      <div class="container">
+        <h1 class="title">What's Inside The Book</h1>
+        <div class="chapterWprapper">
+          <div class="chapterNav">
+          <div class="chapterNavigations">
+            <div class="chapterLink">
+              <span class="dash"></span>
+              <a href="#title">Title page</a>
+            </div>
+            <div class="chapterLink">
+              <span class="dash"></span>
+              <a href="#copyright">Copyright</a>
+            </div>
+            <div class="chapterLink">
+              <span class="dash"></span>
+              <a href="#tableofcontents">Table of contents</a>
+            </div>
+            <div class="chapterLink">
+              <span class="dash"></span>
+              <a href="#dedication">Dedication</a>
+            </div>
+            <div class="chapterLink">
+              <span class="dash"></span>
+              <a href="#foreword">Foreword</a>
+            </div>
+            <div class="chapterLink">
+              <span class="dash"></span>
+              <a href="#prologue">Prologue</a>
+            </div>
+            <div class="chapterLink">
+              <span class="dash"></span>
+              <a href="#epilogue">Epilogue</a>
+            </div>
+            <div class="chapterLink">
+              <span class="dash"></span>
+              <a href="#epigraph">Epigraph</a>
+            </div>
+          </div>
+          </div>
+          <div class="chepterText">
+            <div id="title" class="card">
+              <h1>Title Page</h1>
+              <p>On her way she met a copy. The copy warned the Little Blind Text, that where it came from it would have been rewritten a thousand times and everything that was left from its origin would be the word "and" and the Little Blind Text should turn around and return to its own, safe country. But nothing the copy said could convince her and so it didn't take long until a few insidious Copy Writers ambushed her, made her drunk with Longe and Parole and dragged her into their agency, where they abused her for their.</p>
+            </div>
+            <div id="copyright" class="card">
+              <h1>Copyright</h1>
+              <p>On her way she met a copy. The copy warned the Little Blind Text, that where it came from it would have been rewritten a thousand times and everything that was left from its origin would be the word "and" and the Little Blind Text should turn around and return to its own, safe country. But nothing the copy said could convince her and so it didn’t take long until a few insidious Copy Writers ambushed her, made her drunk with Longe and Parole and dragged her into their agency, where they abused her for their.</p>
+            </div>
+            <div id="tableofcontents" class="card">
+              <h1>Table of Contents</h1>
+              <p>On her way she met a copy. The copy warned the Little Blind Text, that where it came from it would have been rewritten a thousand times and everything that was left from its origin would be the word "and" and the Little Blind Text should turn around and return to its own, safe country. But nothing the copy said could convince her and so it didn't take long until a few insidious Copy Writers ambushed her, made her drunk with Longe and Parole and dragged her into their agency, where they abused her for their.</p>
+            </div>
+            <div id="dedication" class="card">
+              <h1>Dedication</h1>
+              <p>On her way she met a copy. The copy warned the Little Blind Text, that where it came from it would have been rewritten a thousand times and everything that was left from its origin would be the word "and" and the Little Blind Text should turn around and return to its own, safe country. But nothing the copy said could convince her and so it didn't take long until a few insidious Copy Writers ambushed her, made her drunk with Longe and Parole and dragged her into their agency, where they abused her for their.</p>
+            </div>
+            <div id="foreword" class="card">
+              <h1>Foreword</h1>
+              <p>On her way she met a copy. The copy warned the Little Blind Text, that where it came from it would have been rewritten a thousand times and everything that was left from its origin would be the word "and" and the Little Blind Text should turn around and return to its own, safe country. But nothing the copy said could convince her and so it didn't take long until a few insidious Copy Writers ambushed her, made her drunk with Longe and Parole and dragged her into their agency, where they abused her for their.</p>
+            </div>
+            <div id="prologue" class="card">
+              <h1>Prologue</h1>
+              <p>On her way she met a copy. The copy warned the Little Blind Text, that where it came from it would have been rewritten a thousand times and everything that was left from its origin would be the word "and" and the Little Blind Text should turn around and return to its own, safe country. But nothing the copy said could convince her and so it didn't take long until a few insidious Copy Writers ambushed her, made her drunk with Longe and Parole and dragged her into their agency, where they abused her for their.</p>
+            </div>
+            <div id="epilogue" class="card">
+              <h1>Epilogue</h1>
+              <p>On her way she met a copy. The copy warned the Little Blind Text, that where it came from it would have been rewritten a thousand times and everything that was left from its origin would be the word "and" and the Little Blind Text should turn around and return to its own, safe country. But nothing the copy said could convince her and so it didn't take long until a few insidious Copy Writers ambushed her, made her drunk with Longe and Parole and dragged her into their agency, where they abused her for their.</p>
+            </div>
+            <div id="epigraph" class="card">
+              <h1>Epigraph</h1>
+              <p>On her way she met a copy. The copy warned the Little Blind Text, that where it came from it would have been rewritten a thousand times and everything that was left from its origin would be the word "and" and the Little Blind Text should turn around and return to its own, safe country. But nothing the copy said could convince her and so it didn't take long until a few insidious Copy Writers ambushed her, made her drunk with Longe and Parole and dragged her into their agency, where they abused her for their.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
 </body>
+<script src="./script.js"></script>
 </html>
