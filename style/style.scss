@@ -4,9 +4,9 @@
   padding: 0px;
   box-sizing: border-box;
 }
-html {
-  scroll-behavior: smooth;
-}
+// html {
+//   scroll-behavior: smooth;
+// }
 body {
   font-family: "Raleway", sans-serif;
 }
@@ -288,9 +288,10 @@ nav {
         .dash{
         transition: all .3s ease;
         }
-        a {
+        span {
         transition: all .3s ease;
         font-weight: 700;
+        cursor: pointer;
         }
       }
       .chapterLinkActive {
@@ -300,7 +301,7 @@ nav {
           width: 35px;
           margin-right: 5px;
         }
-        a {
+        span {
           color: #17b978;
         }
       }

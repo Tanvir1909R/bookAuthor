@@ -5,10 +5,6 @@
   box-sizing: border-box;
 }
 
-html {
-  scroll-behavior: smooth;
-}
-
 body {
   font-family: "Raleway", sans-serif;
 }
@@ -293,9 +289,10 @@ nav {
 .chapterWprapper .chapterNav .chapterNavigations .chapterLink .dash {
   transition: all 0.3s ease;
 }
-.chapterWprapper .chapterNav .chapterNavigations .chapterLink a {
+.chapterWprapper .chapterNav .chapterNavigations .chapterLink span {
   transition: all 0.3s ease;
   font-weight: 700;
+  cursor: pointer;
 }
 .chapterWprapper .chapterNav .chapterNavigations .chapterLinkActive .dash {
   height: 2px;
@@ -303,7 +300,7 @@ nav {
   width: 35px;
   margin-right: 5px;
 }
-.chapterWprapper .chapterNav .chapterNavigations .chapterLinkActive a {
+.chapterWprapper .chapterNav .chapterNavigations .chapterLinkActive span {
   color: #17b978;
 }
 

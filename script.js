@@ -43,7 +43,7 @@ const showData = (data)=>{
     let linkHtml = `
       <div class="chapterLink">
         <span class="dash"></span>
-        <a href="#${d.card.cardId}">${d.linkText}</a>
+        <span onclick="scrollToId('${d.card.cardId}')">${d.linkText}</span>
       </div>
     `;
     let cardHtml = `
@@ -54,5 +54,13 @@ const showData = (data)=>{
     `;
     chapterNavContainer.innerHTML += linkHtml;
     cardContainer.innerHTML += cardHtml;
+  })
+}
+
+function scrollToId(ID){
+  const element = document.getElementById(ID);
+  element.scrollIntoView({
+    behavior: "smooth",
+    block:"center",
   })
 }
