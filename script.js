@@ -1,7 +1,7 @@
 const counters = document.querySelectorAll(".auto_counter");
 const bar = document.querySelector('.bar');
-
-
+const chapterNavContainer = document.querySelector('.chapterNavigations')
+const cardContainer = document.querySelector('.chepterText')
 // handle nav btn 
 bar.addEventListener('click',()=>{
     document.querySelector('.navLinks').classList.toggle("activeNav");
@@ -32,3 +32,27 @@ counters.forEach((counter) => {
   };
   updateCouont();
 });
+
+// fecth links
+fetch('./data/chapterLinks.json')
+.then((res) => res.json())
+.then((data) => showData(data))
+
+const showData = (data)=>{
+  data.forEach((d)=>{
+    let linkHtml = `
+      <div class="chapterLink">
+        <span class="dash"></span>
+        <a href="#${d.card.cardId}">${d.linkText}</a>
+      </div>
+    `;
+    let cardHtml = `
+      <div id="${d.card.cardId}" class="card">
+        <h1>${d.card.cardTitle}</h1>
+        <p>${d.card.cardBody}</p>
+      </div>
+    `;
+    chapterNavContainer.innerHTML += linkHtml;
+    cardContainer.innerHTML += cardHtml;
+  })
+}

@@ -280,11 +280,28 @@ nav {
       position: sticky;
       top: 93px;
       .chapterLink {
+        @include flex(flex-start, center);
         color: #263b5e;
         font-size: 1.2rem;
         margin-bottom: 20px;
+        transition: all .3s ease;
+        .dash{
+        transition: all .3s ease;
+        }
         a {
-          font-weight: 700;
+        transition: all .3s ease;
+        font-weight: 700;
+        }
+      }
+      .chapterLinkActive {
+        .dash {
+          height: 2px;
+          background: #17b978;
+          width: 35px;
+          margin-right: 5px;
+        }
+        a {
+          color: #17b978;
         }
       }
     }

@@ -282,12 +282,29 @@ nav {
   top: 93px;
 }
 .chapterWprapper .chapterNav .chapterNavigations .chapterLink {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
   color: #263b5e;
   font-size: 1.2rem;
   margin-bottom: 20px;
+  transition: all 0.3s ease;
+}
+.chapterWprapper .chapterNav .chapterNavigations .chapterLink .dash {
+  transition: all 0.3s ease;
 }
 .chapterWprapper .chapterNav .chapterNavigations .chapterLink a {
+  transition: all 0.3s ease;
   font-weight: 700;
+}
+.chapterWprapper .chapterNav .chapterNavigations .chapterLinkActive .dash {
+  height: 2px;
+  background: #17b978;
+  width: 35px;
+  margin-right: 5px;
+}
+.chapterWprapper .chapterNav .chapterNavigations .chapterLinkActive a {
+  color: #17b978;
 }
 
 .card {
