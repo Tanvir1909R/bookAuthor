@@ -5,6 +5,10 @@
   box-sizing: border-box;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   font-family: "Raleway", sans-serif;
 }
@@ -14,7 +18,7 @@ a {
   color: black;
 }
 
-.title {
+.heading {
   font-size: 3rem;
   color: #263b5e;
   text-align: center;
@@ -287,17 +291,17 @@ nav {
   transition: all 0.3s ease;
 }
 .chapterWprapper .chapterNav .chapterNavigations .chapterLink .dash {
-  transition: all 0.3s ease;
+  transition: all 0.4s ease;
 }
 .chapterWprapper .chapterNav .chapterNavigations .chapterLink span {
-  transition: all 0.3s ease;
+  transition: all 0.4s ease;
   font-weight: 700;
   cursor: pointer;
 }
 .chapterWprapper .chapterNav .chapterNavigations .chapterLinkActive .dash {
   height: 2px;
   background: #17b978;
-  width: 35px;
+  width: 20px;
   margin-right: 5px;
 }
 .chapterWprapper .chapterNav .chapterNavigations .chapterLinkActive span {

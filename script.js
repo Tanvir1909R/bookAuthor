@@ -9,7 +9,7 @@ bar.addEventListener('click',()=>{
 
 // on scroll nav bar animation 
 window.addEventListener('scroll',()=>{
-  if(window.scrollY > 100){
+  if(window.scrollY > 0){
     document.getElementById('header').classList.add('headerActive')
   }else{
     document.getElementById('header').classList.remove('headerActive')
@@ -41,7 +41,7 @@ fetch('./data/chapterLinks.json')
 const showData = (data)=>{
   data.forEach((d)=>{
     let linkHtml = `
-      <div class="chapterLink">
+      <div class="chapterLink ${d.card.cardId}">
         <span class="dash"></span>
         <span onclick="scrollToId('${d.card.cardId}')">${d.linkText}</span>
       </div>
@@ -56,11 +56,23 @@ const showData = (data)=>{
     cardContainer.innerHTML += cardHtml;
   })
 }
-
 function scrollToId(ID){
-  const element = document.getElementById(ID);
-  element.scrollIntoView({
+  const card = document.getElementById(ID);
+  const link = document.getElementsByClassName(ID);
+  card.scrollIntoView({
     behavior: "smooth",
     block:"center",
   })
+  linkActive( card, link)
+}
+const linkActive = (card, link)=>{
+  window.addEventListener('scroll',()=>{
+    const cardPosition = card.getBoundingClientRect().top;
+    const windowHeight = window.innerHeight/3;
+      if(windowHeight >= cardPosition){
+        link[0].classList.add('chapterLinkActive');
+      }else{
+        link[0].classList.remove('chapterLinkActive');
+      }
+    })
 }
