@@ -54,19 +54,22 @@ const showData = (data)=>{
     `;
     chapterNavContainer.innerHTML += linkHtml;
     cardContainer.innerHTML += cardHtml;
+
+    scrollSpy(d.card.cardId)
   })
 }
 function scrollToId(ID){
   const card = document.getElementById(ID);
-  const link = document.getElementsByClassName(ID);
   card.scrollIntoView({
     behavior: "smooth",
     block:"center",
   })
-  linkActive( card, link)
 }
-const linkActive = (card, link)=>{
+
+function scrollSpy(ID){
   window.addEventListener('scroll',()=>{
+    const card = document.getElementById(ID);
+    const link = document.getElementsByClassName(ID);
     const cardPosition = card.getBoundingClientRect().top;
     const windowHeight = window.innerHeight/3;
       if(windowHeight >= cardPosition){
@@ -74,5 +77,5 @@ const linkActive = (card, link)=>{
       }else{
         link[0].classList.remove('chapterLinkActive');
       }
-    })
+  })
 }

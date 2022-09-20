@@ -288,21 +288,20 @@ nav {
   color: #263b5e;
   font-size: 1.2rem;
   margin-bottom: 20px;
-  transition: all 0.3s ease;
 }
 .chapterWprapper .chapterNav .chapterNavigations .chapterLink .dash {
+  background: #17b978;
+  height: 2px;
+  margin-right: 5px;
   transition: all 0.4s ease;
 }
 .chapterWprapper .chapterNav .chapterNavigations .chapterLink span {
-  transition: all 0.4s ease;
   font-weight: 700;
   cursor: pointer;
+  transition: all 0.4s ease;
 }
 .chapterWprapper .chapterNav .chapterNavigations .chapterLinkActive .dash {
-  height: 2px;
-  background: #17b978;
   width: 20px;
-  margin-right: 5px;
 }
 .chapterWprapper .chapterNav .chapterNavigations .chapterLinkActive span {
   color: #17b978;

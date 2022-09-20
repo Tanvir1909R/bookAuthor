@@ -284,22 +284,21 @@ nav {
         color: #263b5e;
         font-size: 1.2rem;
         margin-bottom: 20px;
-        transition: all .3s ease;
         .dash{
-        transition: all .4s ease;
+          background: #17b978;
+          height: 2px;
+          margin-right: 5px;
+          transition: all .4s ease;
         }
         span {
-        transition: all .4s ease;
-        font-weight: 700;
-        cursor: pointer;
+          font-weight: 700;
+          cursor: pointer;
+          transition: all .4s ease;
         }
       }
       .chapterLinkActive {
         .dash {
-          height: 2px;
-          background: #17b978;
           width: 20px;
-          margin-right: 5px;
         }
         span {
           color: #17b978;
