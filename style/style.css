@@ -322,4 +322,34 @@ nav {
   color: #747f9c;
   font-size: 1.1rem;
   line-height: 30px;
+}
+
+.services {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 30px;
+}
+.services .service {
+  background-color: #f5f4fb;
+  border-radius: 5px;
+  text-align: center;
+  padding: 2rem 1rem;
+}
+.services .service .icon {
+  padding: 2rem 0;
+}
+.services .service .icon svg {
+  width: 15%;
+  color: #17b978;
+}
+.services .service .serviceDesc h3 {
+  font-size: 1.4rem;
+  font-weight: 500;
+  margin-bottom: 30px;
+}
+.services .service .serviceDesc p {
+  color: #747f9c;
+  font-weight: 500;
+  line-height: 30px;
+  margin-bottom: 30px;
 }/*# sourceMappingURL=style.css.map */

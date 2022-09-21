@@ -16,7 +16,7 @@ window.addEventListener('scroll',()=>{
   }
 })
 
-// hender counter on the counter section 
+// handel counter on the counter section 
 counters.forEach((counter) => {
   counter.innerHTML = 0;
   const updateCouont = () => {
@@ -33,7 +33,7 @@ counters.forEach((counter) => {
   updateCouont();
 });
 
-// fecth links
+// fetch links
 fetch('./data/chapterLinks.json')
 .then((res) => res.json())
 .then((data) => showData(data))
