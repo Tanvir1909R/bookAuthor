@@ -284,16 +284,16 @@ nav {
         color: #263b5e;
         font-size: 1.2rem;
         margin-bottom: 20px;
-        .dash{
+        .dash {
           background: #17b978;
           height: 2px;
           margin-right: 5px;
-          transition: all .4s ease;
+          transition: all 0.4s ease;
         }
         span {
           font-weight: 700;
           cursor: pointer;
-          transition: all .4s ease;
+          transition: all 0.4s ease;
         }
       }
       .chapterLinkActive {
@@ -324,30 +324,31 @@ nav {
   }
 }
 
-// service section 
-.services{
+// service section
+.services {
   display: grid;
-  grid-template-columns: repeat(3,1fr);
+  grid-template-columns: repeat(3, 1fr);
   grid-gap: 30px;
-  .service{
+  padding: 1rem;
+  .service {
     background-color: #f5f4fb;
     border-radius: 5px;
     text-align: center;
     padding: 2rem 1rem;
-    .icon{
+    .icon {
       padding: 2rem 0;
-      svg{
+      svg {
         width: 15%;
         color: #17b978;
       }
     }
-    .serviceDesc{
-      h3{
+    .serviceDesc {
+      h3 {
         font-size: 1.4rem;
         font-weight: 500;
         margin-bottom: 30px;
       }
-      p{
+      p {
         color: #747f9c;
         font-weight: 500;
         line-height: 30px;
@@ -356,25 +357,31 @@ nav {
     }
   }
 }
-// books section 
-.myBooksWrapper{
+@media (max-width: 760px) {
+  .services {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
+// books section
+.myBooksWrapper {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   grid-gap: 40px;
+  padding: 1rem;
 }
-.book{
+.book {
   width: 100%;
   position: relative;
-  .bookImg{
+  .bookImg {
     width: 100%;
     height: 100%;
-    img{
+    img {
       width: 100%;
       object-fit: cover;
       height: 100%;
     }
   }
-  .bookDesc{
+  .bookDesc {
     position: absolute;
     left: 0;
     bottom: 0;
@@ -386,17 +393,23 @@ nav {
     align-items: flex-start;
     justify-content: end;
     background-color: rgba(0, 0, 0, 0.33);
+    transition: all 0.3s ease;
     padding: 1rem 2rem 2.5rem 2rem;
     opacity: 0;
-    h2{
+    h2 {
       font-size: 1.8rem;
       padding-bottom: 20px;
     }
-    p{
+    p {
       font-size: 1.2rem;
     }
   }
-  &:hover .bookDesc{
+  &:hover .bookDesc {
     opacity: 1;
+  }
+}
+@media (max-width: 760px) {
+  .myBooksWrapper {
+    grid-template-columns: repeat(1, 1fr);
   }
 }

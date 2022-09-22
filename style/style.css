@@ -328,6 +328,7 @@ nav {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   grid-gap: 30px;
+  padding: 1rem;
 }
 .services .service {
   background-color: #f5f4fb;
@@ -354,10 +355,16 @@ nav {
   margin-bottom: 30px;
 }
 
+@media (max-width: 760px) {
+  .services {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
 .myBooksWrapper {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   grid-gap: 40px;
+  padding: 1rem;
 }
 
 .book {
@@ -386,6 +393,7 @@ nav {
   align-items: flex-start;
   justify-content: end;
   background-color: rgba(0, 0, 0, 0.33);
+  transition: all 0.3s ease;
   padding: 1rem 2rem 2.5rem 2rem;
   opacity: 0;
 }
@@ -398,4 +406,10 @@ nav {
 }
 .book:hover .bookDesc {
   opacity: 1;
+}
+
+@media (max-width: 760px) {
+  .myBooksWrapper {
+    grid-template-columns: repeat(1, 1fr);
+  }
 }/*# sourceMappingURL=style.css.map */
