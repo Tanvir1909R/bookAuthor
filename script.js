@@ -54,7 +54,6 @@ const showData = (data)=>{
     `;
     chapterNavContainer.innerHTML += linkHtml;
     cardContainer.innerHTML += cardHtml;
-
     scrollSpy(d.card.cardId)
   })
 }
